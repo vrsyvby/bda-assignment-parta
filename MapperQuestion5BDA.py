@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+
+"""
+Mapper for extracting provider and billed amount from input data.
+
+This script reads tab-separated input lines, each expected to have 8 fields:
+month, name, address, dob, provider, type, billedamount, paidamount.
+
+For each valid line, it outputs a tab-separated pair: provider and billedamount.
+"""
+
 import sys
 
 for line in sys.stdin:

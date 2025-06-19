@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+
+"""
+Reducer for summing billed amounts per provider.
+
+This script reads tab-separated input lines, each expected to have 2 fields:
+provider, billedamount.
+
+It outputs the total billed amount for each provider.
+"""
+
 import sys
 
 totalDuePerProvider=0

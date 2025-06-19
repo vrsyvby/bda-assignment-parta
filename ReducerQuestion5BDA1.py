@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+
+"""
+Reducer for calculating market share by provider.
+
+This script reads tab-separated input lines, each expected to have 2 fields:
+provider, count.
+
+It calculates and prints the market share (percentage) of each provider based on the total count.
+"""
+
 import sys
 from collections import defaultdict
 

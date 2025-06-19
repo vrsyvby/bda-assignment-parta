@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+
+"""
+Reducer for counting records per provider and type.
+
+This script reads tab-separated input lines, each expected to have 2 fields:
+composite_key (provider|type), count.
+
+It outputs the total count for each provider and type combination.
+"""
+
 import sys
 
 oldKey = None
