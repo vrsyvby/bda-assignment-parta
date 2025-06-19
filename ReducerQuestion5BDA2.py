@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+
+"""
+Reducer for calculating the average age of patients per provider.
+
+This script reads tab-separated input lines, each expected to have 2 fields:
+provider, age.
+
+It outputs the average age of patients for each provider.
+"""
 import sys
 
 totalAge=0

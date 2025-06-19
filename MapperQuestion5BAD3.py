@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+
+"""
+Mapper for generating composite keys of provider and area.
+
+This script reads tab-separated input lines, each expected to have 8 fields:
+month, name, address, dob, provider, type, billedamount, paidamount.
+
+For each valid line, it outputs a tab-separated pair: composite_key (provider|area) and 1.
+The area is extracted as the last part of the address field.
+"""
+
 import sys
 
 for line in sys.stdin:

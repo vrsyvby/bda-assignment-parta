@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+
+"""
+Reducer for summing total subscribers per provider per area.
+
+This script reads tab-separated input lines, each expected to have 2 fields:
+provider_area, subscriber_count.
+
+It outputs the total number of subscribers for each provider in each area.
+"""
+
+
 import sys
 
 totalSubscriberPerProviderPerArea=0
